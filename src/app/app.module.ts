@@ -6,19 +6,21 @@ import { HomeComponent } from './components/home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { MenuComponent } from './templates/menu/menu.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-import { AppRoutingModule } from './app.routing.module';
+import { AppRouting } from './app.routing';
+import { CardComponent } from './templates/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
-    AppRoutingModule,
+    AppRouting,
   ],
   providers: [],
   bootstrap: [AppComponent]
