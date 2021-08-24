@@ -1,1 +1,10 @@
-<p>card works!</p>
+<div class="cardItem">
+    <img *ngIf="content.image" [src]="content.image"/>
+    <h4>{{ content.name }}</h4>
+    <span>R$ {{ content.price }}</span>
+    <div class="cardFooter">
+        <button (click)="redirectDetail(content.id)" >Detalhes</button>
+        <button (click)="redirectEdit(content.id)">Editar</button>
+        <button>Comprar</button>
+    </div>
+</div>
