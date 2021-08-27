@@ -7,7 +7,9 @@ import { ProductsComponent } from './products.component';
 
 const productRouter: Routes = [
     {
-        path: '', component: ProductsComponent,
+        
+        path: '', 
+        component: ProductsComponent,
         children: [
             {path: 'detalhe/:id', component: DetailProductComponent},
             {path: 'editar/:id', component: EditProductComponent}

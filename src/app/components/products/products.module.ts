@@ -6,6 +6,7 @@ import { EditProductComponent } from './edit-product/edit-product.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { DetailProductComponent } from './detail-product/detail-product.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { ListProductComponent } from './list-product/list-product.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     ProductsComponent,
     EditProductComponent,
     CreateProductComponent,
-    DetailProductComponent
+    DetailProductComponent,
+    ListProductComponent
   ],
   imports: [
     CommonModule,

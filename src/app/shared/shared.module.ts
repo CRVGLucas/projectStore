@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../templates/card/card.component';
 import { MenuComponent } from '../templates/menu/menu.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { MenuComponent } from '../templates/menu/menu.component';
     MenuComponent
   ],
   imports: [
-    CommonModule
+    CommonModule, 
+    RouterModule
   ],
   exports: [
     CardComponent,
